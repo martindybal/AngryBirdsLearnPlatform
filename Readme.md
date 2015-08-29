@@ -96,12 +96,12 @@ And the same level, but in another language in the Czech:
 
     public class NaseHra : Hra, IUzivatelemDefinovanaHra
     {
-        public Level LoadLevel()
+        public Level NactiLevel()
         {
             return new Level20();
         }
 
-        public void Start()
+        public void PoSpusteni()
         {
             while (HraciPlocha.NaPolickuPod(AngryBird) != TypPolicka.Prase)
             {

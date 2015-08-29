@@ -56,6 +56,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Engine\FieldType.cs" />
+    <Compile Include="Engine\Implementation\ConvertorToIUserDefinedGame.cs" />
+    <Compile Include="Engine\Localization\cs-cz\ConvertorToIUserDefinedGameCZ.cs" />
     <Compile Include="Engine\Interfaces\ICharacter.cs" />
     <Compile Include="Engine\Interfaces\IGame.cs" />
     <Compile Include="Engine\Interfaces\IGameBoard.cs" />

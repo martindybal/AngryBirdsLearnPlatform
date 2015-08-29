@@ -37,8 +37,8 @@ namespace AngryBirds
         {
             InitializeComponent();
 
-            //Game = new NaseHra();
-            Game = new OurGame();
+            //Game = ConvertorToIUserDefinedGame.Convert(new NaseHra());
+            Game = ConvertorToIUserDefinedGame.Convert(new OurGame());
 
             Game.GameBoard.Level = Game.LoadLevel();
             Game.AngryBird.Moved += sender => EndGameWhenActionThrowException(Step);
