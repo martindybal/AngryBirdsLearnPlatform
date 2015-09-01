@@ -1,21 +1,21 @@
-Angry birds C# learn platform
+Angry birds C# learning platform
 =========
 
-This project is based on https://hourofcode.com, especially https://studio.code.org/hoc/1. This project helps children and not only children learn how to programing in their native languages (currently English and Czech. I'll be glad when you add more languages)
+This project is based on https://hourofcode.com, especially https://studio.code.org/hoc/1. This project helps students and people who want to try programming for the first time to learn in their native language (currently English and Czech. Feel free to add support for your language - translation pull requests will be highly appreciated)
 
-From a programming point of view it is not a good code and definitely it is not clean code or best practice. The code was created specifically to ease the work for the students as possible most readable syntax as can be.
+From a programming point of view it is not an exampl of good code and definitely it is not clean code nor does not use best practices. The code was created specifically to ease the work for the students when using it to provide a clean syntax for them.
 
-**What can learn here: **
-*Creation program, composing function calls
-*Cycles (for, while, do while)
-*Conditions
-*Custom function
+**What can students learn using this learning platform: **
+*Creating programs in C#, composing function calls
+*Cycles (for, while, do while, foreach)
+*Conditions (if, switch)
+*Writing custom functions
 
 **The idea**
-The students write to one file only. They made class derived from Game and implement IUserDefinedGame interface. But he does not have to know what it is. There is only two method LoadLevel and Start. There are twenty level wait for them, from simplest only go forward to "complex logic" with their defined method.
+The students write their code only in one file. They create a class inherited from the Game class in the platform and implement IUserDefinedGame interface. This interface contains only two methods - LoadLevel() and Start(). Students then write their own code within these two methods. There are twenty levels waiting for them, from the simplest ones where they only need to go forward all the way to levels using "complex logic" and encouraging students to use their own methods.
 
-**How it look**
-There is example of solve level 5
+**How it looks**
+Here is an example of the solution for level 5:
 
     public class OurGame : Game, IUserDefinedGame
     {
@@ -92,7 +92,7 @@ Level 20:
         }
     }
 
-And the same level, but in another language in the Czech:
+And the same level, but in another language (Czech):
 
     public class NaseHra : Hra, IUzivatelemDefinovanaHra
     {
@@ -146,6 +146,6 @@ And the same level, but in another language in the Czech:
         }
     }
 
-I know that's not a good idea to have a code in the national language, if it is not English :-). But we teach so many people from scratch, students of non-technical colleges, high school students, but also children under ten years of age and for them is not problem how to solve the maze or the code, but the English.
+I know that's not a good idea to have a code in the national language, if it is not English :-). I personally dislike this practice. But while teaching people programming from scratch me and my colleagues often encountered some problems with using English. So if you need to teach people whose native language is not English and you do not want to deal with the language barrier while trying to explain the programming principles - give this platform a try and bring more people to programming a little bit easier :)
 
-I'll be glad when applying expand, add additional levels or language. Especially when application help you teach or learn in the best programing language, the C#.
+More levels will be added in the future. Please feel free to submit requests for translations into other languages 
