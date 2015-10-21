@@ -5,11 +5,11 @@ This project is based on https://hourofcode.com, especially https://studio.code.
 
 From a programming point of view it is not an exampl of good code and definitely it is not clean code nor does not use best practices. The code was created specifically to ease the work for the students when using it to provide a clean syntax for them.
 
-**What can students learn using this learning platform: **
-*Creating programs in C#, composing function calls
-*Cycles (for, while, do while, foreach)
-*Conditions (if, switch)
-*Writing custom functions
+**What can students learn using this learning platform:**
+* Creating programs in C#, composing function calls
+* Cycles (for, while, do while, foreach)
+* Conditions (if, switch)
+* Writing custom functions
 
 **The idea**
 The students write their code only in one file. They create a class inherited from the Game class in the platform and implement IUserDefinedGame interface. This interface contains only two methods - LoadLevel() and Start(). Students then write their own code within these two methods. There are twenty levels waiting for them, from the simplest ones where they only need to go forward all the way to levels using "complex logic" and encouraging students to use their own methods.
