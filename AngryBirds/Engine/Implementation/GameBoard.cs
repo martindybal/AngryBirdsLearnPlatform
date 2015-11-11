@@ -26,7 +26,9 @@ namespace AngryBirds.Engine.Implementation
                     y++;
                     break;
             }
-            if (x >= Level.BorderSize || y >= Level.BorderSize)
+
+            if (x < 0 || x >= Level.BorderSize ||
+                y < 0 || y >= Level.BorderSize)
             {
                 return TypPolicka.Prekazka;
             }
