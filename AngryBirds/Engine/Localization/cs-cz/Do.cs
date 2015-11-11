@@ -1,8 +1,8 @@
 namespace AngryBirds.Engine.Localization
 {
-    public static class Do
+    public enum Do
     {
-        public static int Leva => Direction.Left;
-        public static int Prava => Direction.Right;
+        Leva = Direction.Left,
+        Prava = Direction.Right,
     }
 }

@@ -7,11 +7,11 @@ using AngryBirds.Levels;
 
 namespace AngryBirds
 {
-    public class OurGame : Game, IUserDefinedGame
+    public class OurGame : GameEn, IUserDefinedGame
     {
         public Level LoadLevel()
         {
-            return new Level20();
+            return new Level2();
         }
 
         public void Start()

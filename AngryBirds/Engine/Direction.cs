@@ -1,8 +1,8 @@
 namespace AngryBirds.Engine
 {
-    public static class Direction
+    public enum Direction
     {
-        public static int Left => 0;
-        public static int Right => 1;
+        Left = 0,
+        Right = 1,
     }
 }

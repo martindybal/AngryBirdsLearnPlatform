@@ -1,22 +1,22 @@
 using AngryBirds.Engine.Implementation;
 using AngryBirds.Engine.Interfaces;
 
-namespace AngryBirds.Engine.Localization
+namespace AngryBirds.Engine.Localization.en
 {
-    public class Postava : ICharacter
+    public class CharacterEn : ICharacter
     {
         private ICharacter character;
-        
-        public Postava(IGameBoard gameBoard)
+
+        public CharacterEn(IGameBoard gameBoard)
         {
             this.character = new Character(gameBoard);
         }
-        public void Otoc(Do strana)
+        public void Turn(To to)
         {
-            character.Turn((Direction)strana);
+            character.Turn((Direction)to);
         }
 
-        public void PosunoutVpred()
+        public void MoveForward()
         {
             character.MoveForward();
         }

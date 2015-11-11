@@ -1,10 +1,10 @@
 namespace AngryBirds.Engine
 {
-    public class FieldType
+    public enum FieldType
     {
-        public static int AngryBird => 0;
-        public static int Pig => 1;
-        public static int Obstacle => 2;
-        public static int Path => 3;
+        AngryBird = 0,
+        Pig = 1,
+        Obstacle = 2,
+        Path = 3,
     }
 }

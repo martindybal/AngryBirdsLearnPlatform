@@ -4,14 +4,14 @@ namespace AngryBirds.Engine.Localization
 {
     public class HraciPlocha : GameBoard
     {
-        public int NaPolickuPod(Postava postava)
+        public TypPolicka NaPolickuPod(Postava postava)
         {
-            return OnField(postava);
+            return (TypPolicka)OnField(postava);
         }
 
-        public int NaPolickuPred(Postava postava)
+        public TypPolicka NaPolickuPred(Postava postava)
         {
-            return NextField(postava);
+            return (TypPolicka)NextField(postava);
         }
     }
 }

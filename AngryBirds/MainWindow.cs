@@ -51,16 +51,16 @@ namespace AngryBirds
                     var image = new Image();
                     var fieldType = Game.GameBoard.Level.GameBoard[x, y];
 
-                    if (fieldType == TypPolicka.AngryBird)
+                    if (fieldType == FieldType.AngryBird)
                     {
                         Game.AngryBird.PositionX = x;
                         Game.AngryBird.PositionY = y;
                         Game.AngryBird.ActualTurn = Game.GameBoard.Level.AngryBirdTurn;
                         CloneAngryBird(Game.AngryBird);
-                        Game.GameBoard.Level.GameBoard[x, y] = TypPolicka.Cesta;
+                        Game.GameBoard.Level.GameBoard[x, y] = FieldType.Path;
                     }
 
-                    if (fieldType == TypPolicka.Prase)
+                    if (fieldType == FieldType.Pig)
                     {
                         Game.Pig.PositionX = x;
                         Game.Pig.PositionY = y;
@@ -89,12 +89,12 @@ namespace AngryBirds
             gameThread.Start();
         }
 
-        private BitmapImage GetImageSource(int field)
+        private BitmapImage GetImageSource(FieldType field)
         {
             return new BitmapImage(new Uri(GetImageSourcePath(field), UriKind.Relative));
         }
 
-        private string GetImageSourcePath(int type)
+        private string GetImageSourcePath(FieldType type)
         {
             //This can not be switch, becouse FieldType is not enum
             if (type == FieldType.AngryBird)
@@ -146,14 +146,14 @@ namespace AngryBirds
                        .Cast<Image>()
                        .First(e => (int)e.GetValue(Grid.ColumnProperty) == angryBird.PositionX && (int)e.GetValue(Grid.RowProperty) == angryBird.PositionY);
             
-            fieldImage.Source = GetImageSource(TypPolicka.Cesta);
+            fieldImage.Source = GetImageSource(FieldType.Path);
 
             CloneAngryBird(Game.AngryBird);
 
             var angryBirdImage = GameBoard.Children
                     .Cast<Image>()
                     .First(e => Grid.GetColumn(e) == angryBird.PositionX && Grid.GetRow(e) == angryBird.PositionY);
-            angryBirdImage.Source = GetImageSource(TypPolicka.AngryBird);
+            angryBirdImage.Source = GetImageSource(FieldType.AngryBird);
         }
 
         private void CloneAngryBird(ICharacter character)

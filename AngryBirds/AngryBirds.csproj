@@ -57,6 +57,9 @@
     </ApplicationDefinition>
     <Compile Include="Engine\FieldType.cs" />
     <Compile Include="Engine\Implementation\ConvertorToIUserDefinedGame.cs" />
+    <Compile Include="Engine\Localization\en\To.cs" />
+    <Compile Include="Engine\Localization\en\GameEn.cs" />
+    <Compile Include="Engine\Localization\en\CharacterEn.cs" />
     <Compile Include="Engine\Localization\cs-cz\ConvertorToIUserDefinedGameCZ.cs" />
     <Compile Include="Engine\Interfaces\ICharacter.cs" />
     <Compile Include="Engine\Interfaces\IGame.cs" />
@@ -70,7 +73,6 @@
     <Compile Include="Engine\Localization\cs-cz\Do.cs" />
     <Compile Include="Engine\CharacterHandler.cs" />
     <Compile Include="Engine\Implementation\Game.cs" />
-    <Compile Include="Engine\Localization\en\To.cs" />
     <Compile Include="Engine\Implementation\GameBoard.cs" />
     <Compile Include="Engine\Interfaces\IUserDefinedGame.cs" />
     <Compile Include="Engine\Localization\Texts\Texts.Designer.cs">

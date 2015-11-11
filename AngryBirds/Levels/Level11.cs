@@ -8,13 +8,13 @@ namespace AngryBirds.Levels
         protected override void InitBoard()
         {
             AngryBirdTurn = TurnType.Turn0;
-            GameBoard[2, 3] = TypPolicka.AngryBird;
-            GameBoard[3, 5] = TypPolicka.Cesta;
-            GameBoard[4, 5] = TypPolicka.Cesta;
-            GameBoard[4, 4] = TypPolicka.Cesta;
-            GameBoard[4, 3] = TypPolicka.Cesta;
-            GameBoard[3, 3] = TypPolicka.Cesta;
-            GameBoard[2, 5] = TypPolicka.Prase;
+            GameBoard[2, 3] = FieldType.AngryBird;
+            GameBoard[3, 5] = FieldType.Path;
+            GameBoard[4, 5] = FieldType.Path;
+            GameBoard[4, 4] = FieldType.Path;
+            GameBoard[4, 3] = FieldType.Path;
+            GameBoard[3, 3] = FieldType.Path;
+            GameBoard[2, 5] = FieldType.Pig;
         }
     }
 }

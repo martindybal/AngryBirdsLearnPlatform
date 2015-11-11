@@ -3,6 +3,7 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Threading;
 using AngryBirds.Engine.Interfaces;
+using AngryBirds.Engine.Localization.en;
 
 namespace AngryBirds.Engine.Implementation
 {
@@ -52,8 +53,8 @@ namespace AngryBirds.Engine.Implementation
             Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Background, new Action(() => Moved?.Invoke(this)));
             Thread.Sleep(TimeSpan.FromMilliseconds(500));
         }
-
-        public void Turn(int direction)
+        
+        public void Turn(Direction direction)
         {
             var thisAsICharacter = ((ICharacter) this);
             if (direction == Direction.Left)

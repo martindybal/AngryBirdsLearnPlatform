@@ -7,7 +7,7 @@ namespace AngryBirds.Engine.Implementation
     public class GameBoard : IGameBoard
     {
         public Level Level { get; set; }
-        public int NextField(ICharacter character)
+        public FieldType NextField(ICharacter character)
         {
             int x = character.PositionX;
             int y = character.PositionY;
@@ -30,12 +30,12 @@ namespace AngryBirds.Engine.Implementation
             if (x < 0 || x >= Level.BorderSize ||
                 y < 0 || y >= Level.BorderSize)
             {
-                return TypPolicka.Prekazka;
+                return FieldType.Obstacle;
             }
             return Level.GameBoard[x, y];
         }
 
-        public int OnField(ICharacter character)
+        public FieldType OnField(ICharacter character)
         {
             return Level.GameBoard[character.PositionX, character.PositionY];
         }

@@ -1,3 +1,5 @@
+using AngryBirds.Engine.Localization.en;
+
 namespace AngryBirds.Engine.Interfaces
 {
     public interface ICharacter
@@ -7,6 +9,6 @@ namespace AngryBirds.Engine.Interfaces
         int PositionY { get; set; }
         TurnType ActualTurn { get; set; }
         void MoveForward();
-        void Turn(int direction);
+        void Turn(Direction direction);
     }
 }

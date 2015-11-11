@@ -9,32 +9,32 @@ namespace AngryBirds.Levels
         {
             AngryBirdTurn = TurnType.Turn180;
 
-            GameBoard[6, 1] = TypPolicka.AngryBird;
+            GameBoard[6, 1] = FieldType.AngryBird;
 
-            GameBoard[5, 1] = TypPolicka.Cesta;
-            GameBoard[4, 1] = TypPolicka.Cesta;
-            GameBoard[3, 1] = TypPolicka.Cesta;
-            GameBoard[2, 1] = TypPolicka.Cesta;
-            GameBoard[1, 1] = TypPolicka.Cesta;
+            GameBoard[5, 1] = FieldType.Path;
+            GameBoard[4, 1] = FieldType.Path;
+            GameBoard[3, 1] = FieldType.Path;
+            GameBoard[2, 1] = FieldType.Path;
+            GameBoard[1, 1] = FieldType.Path;
 
-            GameBoard[1, 2] = TypPolicka.Cesta;
-            GameBoard[1, 3] = TypPolicka.Cesta;
-            GameBoard[1, 4] = TypPolicka.Cesta;
-            GameBoard[1, 5] = TypPolicka.Cesta;
-            GameBoard[1, 6] = TypPolicka.Cesta;
+            GameBoard[1, 2] = FieldType.Path;
+            GameBoard[1, 3] = FieldType.Path;
+            GameBoard[1, 4] = FieldType.Path;
+            GameBoard[1, 5] = FieldType.Path;
+            GameBoard[1, 6] = FieldType.Path;
 
-            GameBoard[2, 6] = TypPolicka.Cesta;
-            GameBoard[3, 6] = TypPolicka.Cesta;
-            GameBoard[4, 6] = TypPolicka.Cesta;
-            GameBoard[5, 6] = TypPolicka.Cesta;
-            GameBoard[6, 6] = TypPolicka.Cesta;
+            GameBoard[2, 6] = FieldType.Path;
+            GameBoard[3, 6] = FieldType.Path;
+            GameBoard[4, 6] = FieldType.Path;
+            GameBoard[5, 6] = FieldType.Path;
+            GameBoard[6, 6] = FieldType.Path;
 
-            GameBoard[6, 5] = TypPolicka.Cesta;
-            GameBoard[6, 4] = TypPolicka.Cesta;
+            GameBoard[6, 5] = FieldType.Path;
+            GameBoard[6, 4] = FieldType.Path;
 
-            GameBoard[5, 4] = TypPolicka.Cesta;
+            GameBoard[5, 4] = FieldType.Path;
 
-            GameBoard[4, 4] = TypPolicka.Prase;
+            GameBoard[4, 4] = FieldType.Pig;
         }
     }
 }
